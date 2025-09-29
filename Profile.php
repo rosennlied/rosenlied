@@ -51,14 +51,7 @@
 	<div id="tab-rules" class="tab-card">
 				 <div class="card-title">Rules</div>
 				 <div class="rules-content">
-					 <p>1. Jangan spam.</p>
-					 <p>2. Hormati sesama anggota.</p>
-					 <p>1. Jangan spam.</p>
-					 <p>2. Hormati sesama anggota.</p>
-					 <p>1. Jangan spam.</p>
-					 <p>2. Hormati sesama anggota.</p>
-					 <p>1. Jangan spam.</p>
-					 <p>2. Hormati sesama anggota.</p>
+					 <p>Isi Rules</p>
 					 <div class="card-details">Ini adalah halaman Rules.</div>
 				 </div>
 	   </div>
@@ -215,3 +208,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	</script>
 </body>
 </html>
+
