@@ -33,6 +33,10 @@
 			  </ul>
 		  </nav>
 		  <div class="card-date" id="card-date"></div>
+		   <div style="position:absolute;top:10px;right:16px;z-index:2;">
+								<button id="audio-toggle" style="padding:4px 12px;border-radius:6px;border:none;background:#e5dcc5;color:#333;cursor:pointer;font-weight:bold;">▶</button>
+								<audio id="audio" src="XOXZ - IVE.mp3" autoplay muted style="display:none"></audio>
+							</div>
 	   </div>
 	   <div id="tab-home" style="display:block;">
 		   <!-- Konten Home -->
@@ -71,6 +75,21 @@
 <button id="play-audio" style="display:none;">Play Audio</button>
 	
 	<script>
+		// Audio play/pause control
+document.addEventListener("DOMContentLoaded", function() {
+	var audio = document.getElementById("audio");
+	var btn = document.getElementById("audio-toggle");
+	btn.addEventListener("click", function() {
+		if (audio.paused) {
+			audio.muted = false;
+			audio.play();
+			btn.textContent = "⏸";
+		} else {
+			audio.pause();
+			btn.textContent = "▶";
+		}
+	});
+});
 		// Date berjalan di pojok kiri atas card dengan jam, menit, detik
 		function pad(num) {
 			return num < 10 ? '0' + num : num;
@@ -225,6 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	</script>
 </body>
 </html>
+
 
 
 
