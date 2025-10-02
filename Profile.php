@@ -66,6 +66,9 @@
 			   </div>
 		   </div>
 	   </div>
+	
+	<audio src="XOXZ - IVE.mp3" autoplay hidden></audio>
+	
 	<script>
 		// Date berjalan di pojok kiri atas card dengan jam, menit, detik
 		function pad(num) {
@@ -208,4 +211,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	</script>
 </body>
 </html>
+
 
