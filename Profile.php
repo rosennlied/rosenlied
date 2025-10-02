@@ -58,7 +58,7 @@
 	<div id="tab-interest" class="tab-card" style="display:block;">
 		   <div class="card-content" style="flex-direction:column;align-items:center;">
 			   <div class="card-image">
-				   <img src="R1.jpg" alt="Interest Image" class="card-img">
+				   <img src="R1.jpg" alt="Interest Image" class="card-img" style="width:3000px;max-width:100%;">
 			   </div>
 			   <div class="card-info">
 				   <div class="card-title">Interest</div>
@@ -211,5 +211,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	</script>
 </body>
 </html>
+
 
 
