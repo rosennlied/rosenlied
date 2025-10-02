@@ -67,7 +67,8 @@
 		   </div>
 	   </div>
 	
-	<audio src="XOXZ - IVE.mp3" autoplay hidden></audio>
+	<audio id="bg-audio" src="XOXZ - IVE.mp3" preload="auto"></audio>
+<button id="play-audio" style="display:none;">Play Audio</button>
 	
 	<script>
 		// Date berjalan di pojok kiri atas card dengan jam, menit, detik
@@ -208,9 +209,23 @@ document.addEventListener("DOMContentLoaded", function () {
     rulesCard.style.visibility = "visible";
   });
 });
+		
+  // Coba auto play setelah interaksi pengguna
+  document.addEventListener('click', function() {
+    var audio = document.getElementById('bg-audio');
+    audio.play();
+  }, { once: true });
+
+  // Jika ingin tes manual, tampilkan tombol
+  // document.getElementById('play-audio').style.display = 'block';
+  // document.getElementById('play-audio').onclick = function() {
+  //   document.getElementById('bg-audio').play();
+  // };
+		
 	</script>
 </body>
 </html>
+
 
 
 
